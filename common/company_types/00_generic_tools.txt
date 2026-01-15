@@ -1,0 +1,48 @@
+﻿company_tools = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/tool.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+
+
+    building_types = {
+        building_tooling_workshop
+        building_logging_camp
+    }
+    extension_building_types = {
+        building_rubber_plantation
+        building_coal_mine
+    }
+    possible_prestige_goods = {
+        prestige_good_generic_tools
+        prestige_good_burmese_teak
+    }
+
+
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+            any_scope_building = {
+                is_building_type = building_tooling_workshops
+                level >= 2
+            }
+        }
+
+    }
+    prosperity_modifier = {
+        building_group_bg_manufacturing_throughput_add = 0.5
+        state_infrastructure_from_population_add = 0.7
+        state_infrastructure_from_population_max_add = 15
+    }
+    ai_construction_targets = {
+        building_tooling_workshop = {
+            level = 1
+            state_trigger = {
+                is_incorporated = yes
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 10 # Higher base value for flavored companies
+    }
+}

@@ -1,0 +1,49 @@
+company_uncommon_mines = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/mining.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+
+    building_types = {
+        building_sulfur_mine
+        building_lead_mine
+        building_gold_mine
+        building_oil_rig
+    }
+    extension_building_types = {
+        building_tooling_workshops
+    }
+    possible_prestige_goods = {
+        prestige_good_baku_oil
+        prestige_good_sicilian_sulfur
+    }
+
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+            any_scope_building = {
+                is_building_type = building_lead_mine
+                level >= 1
+            }
+        }
+
+    }
+    prosperity_modifier = {
+        state_construction_mult = 0.1
+        building_construction_sector_throughput_add = 0.1
+        state_migration_pull_mult = 0.1
+        country_minting_mult = 0.05
+        state_loyalists_from_political_movements_mult = 0.05
+    }
+    ai_construction_targets = {
+        building_oil_rig = {
+            level = 1
+            state_trigger = {
+                is_incorporated = yes
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 2 # Higher base value for flavored companies
+    }
+}

@@ -1,0 +1,47 @@
+﻿company_newspaper = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/newspaper.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
+
+
+
+    building_types = {
+        building_paper_mill
+    }
+    extension_building_types = {
+        building_electrics_industry
+    }
+    possible_prestige_goods = {
+        prestige_good_generic_paper
+        prestige_good_ericsson_apparatus
+    }
+
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+            any_scope_building = {
+                is_building_type = building_paper_mill
+                level >= 2
+            }
+        }
+
+    }
+    prosperity_modifier = {
+        state_loyalists_from_political_movements_mult = 0.05
+        state_radicals_from_political_movements_mult = -0.1
+        country_prestige_mult = 0.1
+        country_influence_mult = 0.1
+        interest_group_ig_intelligentsia_approval_add = 0.1
+    }
+    ai_construction_targets = {
+        building_paper_mill = {
+            level = 1
+            state_trigger = {
+                is_incorporated = yes
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 2 # Higher base value for flavored companies
+    }
+}
