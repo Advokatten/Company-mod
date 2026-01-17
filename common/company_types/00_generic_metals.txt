@@ -3,6 +3,21 @@ company_basic_metals = {
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 
+    preferred_headquarters = { STATE_EASTERN_NORWAY }
+
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+                state_region = s:STATE_EASTERN_NORWAY
+            }
+        }
+    }
+
     building_types = {
         building_iron_mine
         building_steel_mills
@@ -20,6 +35,7 @@ company_basic_metals = {
     possible = {
         any_scope_state = {
             is_incorporated = yes
+            state_region = s:STATE_EASTERN_NORWAY
             any_scope_building = {
                 is_building_type = building_iron_mine
                 level >= 2
@@ -27,22 +43,32 @@ company_basic_metals = {
         }
 
     }
+
+
     prosperity_modifier = {
         state_loyalists_from_political_movements_mult = 0.075
         state_radicals_from_political_movements_mult = -0.1
         country_production_tech_spread_mult = 0.6
         country_prestige_mult = 0.1
     }
-    ai_will_do = {
-        any_scope_state = {
-            is_incorporated = yes
-            any_scope_building = {
-                is_building_type = building_iron_mine
-                level >= 2
+
+    ai_construction_targets = {
+        building_iron_mine = {
+            level = 2
+            state_trigger = {
+                state_region = s:STATE_EASTERN_NORWAY
             }
         }
-        ai_weight = {
-            value = 4
+    }
+
+    ai_will_do = {
+        any_scope_state = {
+            state_region = s:STATE_EASTERN_NORWAY
+            is_incorporated = yes
         }
+    }
+
+    ai_weight = {
+        value = 4
     }
 }

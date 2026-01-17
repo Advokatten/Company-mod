@@ -3,6 +3,20 @@ company_uncommon_mines = {
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 
+    preferred_headquarters = { STATE_EASTERN_NORWAY }
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+                state_region = s:STATE_EASTERN_NORWAY
+            }
+        }
+    }
+
     building_types = {
         building_sulfur_mine
         building_lead_mine
@@ -20,6 +34,7 @@ company_uncommon_mines = {
     possible = {
         any_scope_state = {
             is_incorporated = yes
+            state_region = s:STATE_EASTERN_NORWAY
             any_scope_building = {
                 is_building_type = building_lead_mine
                 level >= 1
@@ -34,16 +49,28 @@ company_uncommon_mines = {
         country_minting_mult = 0.05
         state_loyalists_from_political_movements_mult = 0.05
     }
+
+    ai_will_do = {
+        any_scope_state = {
+            state_region = s:STATE_EASTERN_NORWAY
+            is_incorporated = yes
+
+        }
+
+    }
+
+
     ai_construction_targets = {
-        building_oil_rig = {
+        building_lead_mine = {
             level = 1
             state_trigger = {
+                state_region = s:STATE_EASTERN_NORWAY
                 is_incorporated = yes
             }
         }
     }
 
     ai_weight = {
-        value = 2 # Higher base value for flavored companies
+        value = 2
     }
 }
