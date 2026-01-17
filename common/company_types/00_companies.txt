@@ -15,6 +15,7 @@
         hidden_trigger = { # Hide attainable if it's always fulfilled by possible
             any_scope_state = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
             }
         }
     }
@@ -34,6 +35,7 @@
         any_scope_state = {
             is_incorporated = yes
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             any_scope_building = {
                 is_building_type = building_financial_district
                 level >= 5
@@ -57,6 +59,7 @@
                 is_building_type = building_financial_district
                 level >= 5
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
                 is_incorporated = yes
             }
         }
@@ -86,6 +89,7 @@ company_livestock_and_agriculture = {
         hidden_trigger = { # Hide attainable if it's always fulfilled by possible
             any_scope_state = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
             }
         }
     }
@@ -109,6 +113,7 @@ company_livestock_and_agriculture = {
         any_scope_state = {
             is_incorporated = yes
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             any_scope_building = {
                 is_building_type = building_livestock_ranch
                 level >= 5
@@ -126,6 +131,7 @@ company_livestock_and_agriculture = {
     ai_will_do = {
         any_scope_state = {
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             is_incorporated = yes
         }
     }
@@ -135,6 +141,7 @@ company_livestock_and_agriculture = {
             level = 5
             state_trigger = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
                 is_incorporated = yes
             }
         }
@@ -166,6 +173,7 @@ company_homegoods = {
         hidden_trigger = { # Hide attainable if it's always fulfilled by possible
             any_scope_state = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
             }
         }
     }
@@ -196,6 +204,7 @@ company_homegoods = {
         any_scope_state = {
             is_incorporated = yes
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             any_scope_building = {
                 is_building_type = building_textile_mills
                 level >= 2
@@ -216,6 +225,7 @@ company_homegoods = {
         any_scope_state = {
             is_incorporated = yes
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             any_scope_building = {
                 is_building_type = building_textile_mill
                 level >= 2
@@ -229,6 +239,7 @@ company_homegoods = {
             level = 2
             state_trigger = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
             }
         }
     }
@@ -259,6 +270,7 @@ company_basic_metals = {
         hidden_trigger = { # Hide attainable if it's always fulfilled by possible
             any_scope_state = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
             }
         }
     }
@@ -281,6 +293,7 @@ company_basic_metals = {
         any_scope_state = {
             is_incorporated = yes
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             any_scope_building = {
                 is_building_type = building_iron_mine
                 level >= 2
@@ -302,6 +315,7 @@ company_basic_metals = {
             level = 2
             state_trigger = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
             }
         }
     }
@@ -309,6 +323,7 @@ company_basic_metals = {
     ai_will_do = {
         any_scope_state = {
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             is_incorporated = yes
         }
     }
@@ -339,6 +354,7 @@ company_uncommon_mines = {
         hidden_trigger = { # Hide attainable if it's always fulfilled by possible
             any_scope_state = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
             }
         }
     }
@@ -361,6 +377,7 @@ company_uncommon_mines = {
         any_scope_state = {
             is_incorporated = yes
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             any_scope_building = {
                 is_building_type = building_lead_mine
                 level >= 1
@@ -379,6 +396,7 @@ company_uncommon_mines = {
     ai_will_do = {
         any_scope_state = {
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             is_incorporated = yes
 
         }
@@ -391,6 +409,7 @@ company_uncommon_mines = {
             level = 1
             state_trigger = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
                 is_incorporated = yes
             }
         }
@@ -422,6 +441,7 @@ company_newspaper = {
         hidden_trigger = { # Hide attainable if it's always fulfilled by possible
             any_scope_state = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
             }
         }
     }
@@ -441,6 +461,7 @@ company_newspaper = {
         any_scope_state = {
             is_incorporated = yes
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             any_scope_building = {
                 is_building_type = building_paper_mill
                 level >= 2
@@ -459,6 +480,7 @@ company_newspaper = {
     ai_will_do = {
         any_scope_state = {
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             is_incorporated = yes
 
         }
@@ -470,6 +492,7 @@ company_newspaper = {
             level = 1
             state_trigger = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
                 is_incorporated = yes
             }
         }
@@ -499,6 +522,7 @@ company_tools = {
         hidden_trigger = { # Hide attainable if it's always fulfilled by possible
             any_scope_state = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
             }
         }
     }
@@ -521,6 +545,7 @@ company_tools = {
         any_scope_state = {
             is_incorporated = yes
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             any_scope_building = {
                 is_building_type = building_tooling_workshops
                 level >= 2
@@ -540,6 +565,7 @@ company_tools = {
     ai_will_do = {
         any_scope_state = {
             state_region = s:STATE_EASTERN_NORWAY
+            state_region = s:STATE_WESTERN_NORWAY
             is_incorporated = yes
         }
     }
@@ -550,6 +576,7 @@ company_tools = {
             level = 1
             state_trigger = {
                 state_region = s:STATE_EASTERN_NORWAY
+                state_region = s:STATE_WESTERN_NORWAY
                 is_incorporated = yes
             }
         }
