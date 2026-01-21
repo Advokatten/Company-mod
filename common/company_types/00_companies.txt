@@ -1,7 +1,5 @@
 ﻿#####################################Norway################################################
 
-
-
 company_bank = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/bank.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
@@ -30,9 +28,11 @@ company_bank = {
     }
     extension_building_types = {
         building_railway
+        building_art_academy
     }
     possible_prestige_goods = {
         prestige_good_generic_paper
+        prestige_good_grand_strategy_games
     }
 
     possible = {
@@ -48,6 +48,8 @@ company_bank = {
 
     }
     prosperity_modifier = {
+        investment_pool_contribution_mult = 0.05
+        construction_sector_throughput_mult = 0.5
         country_loan_interest_rate_mult = -0.05
         state_farmers_investment_pool_contribution_add = 0.5
         state_shopkeepers_investment_pool_contribution_add = 0.5
@@ -55,6 +57,7 @@ company_bank = {
         state_aristocrats_investment_pool_contribution_add = 0.5
         state_capitalists_investment_pool_contribution_add = 0.5
         country_government_dividends_reinvestment_add = 0.5
+        government_wages_mult = -0.05
         country_max_companies_add = 2
     }
     ai_will_do = {
@@ -110,6 +113,7 @@ company_livestock_and_agriculture = {
         building_food_industry
     }
     possible_prestige_goods = {
+        prestige_good_generic_groceries
         prestige_good_river_plate_beef
         prestige_good_pannonian_patent_flour
     }
@@ -337,6 +341,90 @@ company_basic_metals = {
 ############################################################
 
 
+company_kongsberg = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/newspaper.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+
+    preferred_headquarters = { STATE_EASTERN_NORWAY }
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+                state_region = s:STATE_EASTERN_NORWAY
+
+            }
+        }
+    }
+
+    building_types = {
+        building_arms_industry
+        building_artillery_foundry
+    }
+    extension_building_types = {
+        building_munition_plant
+    }
+    possible_prestige_goods = {
+        prestige_good_krupp_guns
+        prestige_good_colt_revolvers
+    }
+
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+            state_region = s:STATE_EASTERN_NORWAY
+
+            any_scope_building = {
+                is_building_type = building_paper_mill
+                level >= 2
+            }
+        }
+
+    }
+    prosperity_modifier = {
+        unit_army_offense_mult = 0.5
+        unit_army_defense_mult = 0.5
+        unit_kill_rate_add = 1
+        building_arms_industry_throughput_add = 0.90
+        building_artillery_throughput_add = 0.90
+        building_munition_plant_throughput_add = 0.90
+
+    }
+
+    ai_will_do = {
+        any_scope_state = {
+            state_region = s:STATE_EASTERN_NORWAY
+
+            is_incorporated = yes
+
+        }
+
+    }
+
+    ai_construction_targets = {
+        building_paper_mill = {
+            level = 1
+            state_trigger = {
+                state_region = s:STATE_EASTERN_NORWAY
+
+                is_incorporated = yes
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 2 # Higher base value for flavored companies
+    }
+}
+
+
+############################################################
+
+
 
 company_uncommon_mines = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/mining.png"
@@ -475,6 +563,8 @@ company_newspaper = {
         country_prestige_mult = 0.1
         country_influence_mult = 0.1
         interest_group_ig_intelligentsia_approval_add = 0.1
+        qualifications_gain_mult = 0.10
+        education_access_mult = 0.05
     }
 
     ai_will_do = {
@@ -535,7 +625,7 @@ company_tools = {
         building_coal_mine
     }
     possible_prestige_goods = {
-        prestige_good_generic_tool
+        prestige_good_generic_tools
         prestige_good_burmese_teak
     }
 
@@ -660,5 +750,427 @@ company_railway = {
 
     ai_weight = {
         value = 4 # Higher base value for flavored companies
+    }
+}
+
+
+
+
+##################################### Sweden ################################################
+
+company_railway_swe = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/SJ.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
+
+
+
+
+    preferred_headquarters = { STATE_SVEALAND}
+
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+                state_region = s:STATE_STATE_SVEALAND
+            }
+        }
+    }
+
+    building_types = {
+        building_railway
+    }
+    extension_building_types = {
+        building_motor_industry
+    }
+    possible_prestige_goods = {
+        prestige_good_schichau_engines
+    }
+
+
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+            state_region = s:STATE_STATE_SVEALAND
+            any_scope_building = {
+                is_building_type = building_railway
+                level >= 2
+            }
+        }
+
+    }
+
+
+
+    prosperity_modifier = {
+        state_infrastructure_from_population_add = 0.7
+        state_infrastructure_from_population_max_add = 15
+        country_production_tech_spread_mult = 0.6
+    }
+
+    ai_will_do = {
+        any_scope_state = {
+            state_region = s:STATE_STATE_SVEALAND
+            is_incorporated = yes
+        }
+    }
+
+
+    ai_construction_targets = {
+        building_railway = {
+            level = 1
+            state_trigger = {
+                state_region = s:STATE_STATE_SVEALAND
+                is_incorporated = yes
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 4 # Higher base value for flavored companies
+    }
+}
+
+#############################################################
+
+
+company_nordea = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/Nordea.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
+
+
+
+    preferred_headquarters = { STATE_SVEALAND }
+
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+
+                state_region = s:STATE_SVEALAND
+            }
+        }
+    }
+
+    building_types = {
+        building_paper_mill
+        building_port
+    }
+    extension_building_types = {
+        building_railway
+    }
+
+
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+
+            state_region = s:STATE_SVEALAND
+            any_scope_building = {
+                is_building_type = building_financial_district
+                level >= 5
+            }
+        }
+
+    }
+    prosperity_modifier = {
+        investment_pool_contribution_mult = 0.05
+        construction_sector_throughput_mult = 0.05
+        country_loan_interest_rate_mult = -0.05
+        state_farmers_investment_pool_contribution_add = 0.05
+        state_shopkeepers_investment_pool_contribution_add = 0.05
+        state_clergymen_investment_pool_contribution_add = 0.05
+        state_aristocrats_investment_pool_contribution_add = 0.05
+        state_capitalists_investment_pool_contribution_add = 0.05
+        country_government_dividends_reinvestment_add = 0.5
+        country_max_companies_add = 1
+    }
+    ai_will_do = {
+        any_scope_state = {
+            any_scope_building = {
+                is_building_type = building_financial_district
+                level >= 5
+
+                state_region = s:STATE_SVEALAND
+                is_incorporated = yes
+            }
+        }
+
+        ai_weight = {
+            value = 20		# Higher base value for flavored companies
+        }
+    }
+}
+
+
+############################################################
+
+
+
+company_h_and_m = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/H&M.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
+
+
+
+    preferred_headquarters = { STATE_SVEALAND }
+
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+
+                state_region = s:STATE_SVEALAND
+            }
+        }
+    }
+
+    building_types = {
+        building_textile_mill
+        building_cotton_plantation
+
+    }
+
+
+    extension_building_types = {
+        building_silk_plantation
+    }
+
+
+    possible_prestige_goods = {
+        prestige_good_haute_couture
+        prestige_good_generic_clothes
+    }
+
+
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+
+            state_region = s:STATE_SVEALAND
+            any_scope_building = {
+                is_building_type = building_textile_mill
+                level >= 2
+            }
+        }
+
+    }
+    prosperity_modifier = {
+        state_loyalists_from_political_movements_mult = 0.075
+        state_radicals_from_political_movements_mult = -0.1
+        country_production_tech_spread_mult = 0.6
+        country_prestige_mult = 0.1
+    }
+
+
+
+    ai_will_do = {
+        any_scope_state = {
+            is_incorporated = yes
+
+            state_region = s:STATE_SVEALAND
+            any_scope_building = {
+                is_building_type = building_textile_mill
+                level >= 2
+            }
+        }
+
+    }
+
+    ai_construction_targets = {
+        building_textile_mill = {
+            level = 2
+            state_trigger = {
+
+                state_region = s:STATE_SVEALAND
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 2
+    }
+}
+
+#####################################################################################
+
+company_ikea = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/ikea.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
+
+
+
+    preferred_headquarters = { STATE_STATE_SVEALAND }
+
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+
+                state_region = s:STATE_SVEALAND
+            }
+        }
+    }
+
+    building_types = {
+        building_furniture_manufactory
+
+    }
+
+
+    extension_building_types = {
+        building_logging_camp
+    }
+
+
+    possible_prestige_goods = {
+        prestige_good_bentwood_furniture
+        prestige_good_english_upholstery
+    }
+
+
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+
+            state_region = s:STATE_SVEALAND
+            any_scope_building = {
+                is_building_type = building_furniture_manufactory
+                level >= 2
+            }
+        }
+
+    }
+    prosperity_modifier = {
+        state_loyalists_from_political_movements_mult = 0.075
+        state_radicals_from_political_movements_mult = -0.1
+        country_production_tech_spread_mult = 0.6
+        country_prestige_mult = 0.1
+    }
+
+
+
+    ai_will_do = {
+        any_scope_state = {
+            is_incorporated = yes
+
+            state_region = s:STATE_SVEALAND
+            any_scope_building = {
+                is_building_type = building_furniture_manufactory
+                level >= 2
+            }
+        }
+
+    }
+
+    ai_construction_targets = {
+        building_textile_mill = {
+            level = 2
+            state_trigger = {
+
+                state_region = s:STATE_SVEALAND
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 2
+    }
+}
+
+##############################################################
+
+company_ica = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/ica.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rice.dds"
+
+
+
+
+    preferred_headquarters = { STATE_SVEALAND }
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+                state_region = s:STATE_SVEALAND
+
+            }
+        }
+    }
+
+    building_types = {
+        building_food_industry
+
+    }
+    extension_building_types = {
+        building_wheat_farm
+        building_rye_farm
+        building_rice_farm
+        building_maize_farm
+        building_millet_farm
+        building_livestock_ranch
+    }
+    possible_prestige_goods = {
+        prestige_good_generic_groceries
+    }
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+            state_region = s:STATE_SVEALAND
+
+            any_scope_building = {
+                is_building_type = building_livestock_ranch
+                level >= 5
+            }
+        }
+
+    }
+
+    prosperity_modifier = {
+        building_food_industry_throughput_add = 0.5
+        country_tech_spread_mult = 1
+        interest_group_ig_rural_folk_approval_add = -10
+    }
+
+    ai_will_do = {
+        any_scope_state = {
+            state_region = s:STATE_SVEALAND
+
+            is_incorporated = yes
+        }
+    }
+
+    ai_construction_targets = {
+        building_livestock_ranch = {
+            level = 5
+            state_trigger = {
+                state_region = s:STATE_SVEALAND
+
+                is_incorporated = yes
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 1 # Higher base value for flavored companies
     }
 }
