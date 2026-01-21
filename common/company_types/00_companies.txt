@@ -585,6 +585,8 @@ company_tools = {
 
 
 ##############################################################
+
+
 company_railway = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/tool.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
@@ -633,9 +635,9 @@ company_railway = {
 
 
     prosperity_modifier = {
-        building_group_bg_manufacturing_throughput_add = 0.5
         state_infrastructure_from_population_add = 0.7
         state_infrastructure_from_population_max_add = 15
+        country_production_tech_spread_mult = 0.6
     }
 
     ai_will_do = {
