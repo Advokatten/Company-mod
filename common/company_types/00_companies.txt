@@ -361,11 +361,12 @@ company_uncommon_mines = {
     building_types = {
         building_sulfur_mine
         building_lead_mine
-        building_gold_mine
-        building_oil_rig
+
     }
     extension_building_types = {
         building_tooling_workshops
+        building_gold_mine
+        building_oil_rig
     }
     possible_prestige_goods = {
         prestige_good_baku_oil
