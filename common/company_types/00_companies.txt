@@ -379,8 +379,8 @@ company_kongsberg = {
             state_region = s:STATE_EASTERN_NORWAY
 
             any_scope_building = {
-                is_building_type = building_paper_mill
-                level >= 2
+                is_building_type = building_arms_industry
+                level >= 1
             }
         }
 
@@ -406,7 +406,7 @@ company_kongsberg = {
     }
 
     ai_construction_targets = {
-        building_paper_mill = {
+        building_arms_industry = {
             level = 1
             state_trigger = {
                 state_region = s:STATE_EASTERN_NORWAY
@@ -794,7 +794,7 @@ company_railway_swe = {
     possible = {
         any_scope_state = {
             is_incorporated = yes
-            state_region = s:STATE_STATE_SVEALAND
+            state_region = s:STATE_SVEALAND
             any_scope_building = {
                 is_building_type = building_railway
                 level >= 2
@@ -823,7 +823,7 @@ company_railway_swe = {
         building_railway = {
             level = 1
             state_trigger = {
-                state_region = s:STATE_STATE_SVEALAND
+                state_region = s:STATE_SVEALAND
                 is_incorporated = yes
             }
         }
@@ -1011,7 +1011,7 @@ company_ikea = {
 
 
 
-    preferred_headquarters = { STATE_STATE_SVEALAND }
+    preferred_headquarters = { STATE_SVEALAND }
 
 
     potential = {
@@ -1079,7 +1079,7 @@ company_ikea = {
     }
 
     ai_construction_targets = {
-        building_textile_mill = {
+        building_furniture_manufactory = {
             level = 2
             state_trigger = {
 
@@ -1172,5 +1172,85 @@ company_ica = {
 
     ai_weight = {
         value = 1 # Higher base value for flavored companies
+    }
+}
+
+
+#############################################################
+
+
+company_volvo = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/volvo.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+
+
+
+    preferred_headquarters = { STATE_SVEALAND }
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+                state_region = s:STATE_SVEALAND
+
+            }
+        }
+    }
+
+    building_types = {
+        building_motor_industry
+
+    }
+    extension_building_types = {
+        building_automotive_industry
+    }
+    possible_prestige_goods = {
+        prestige_good_schichau_engines
+        prestige_good_ford_automobiles
+    }
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+            state_region = s:STATE_SVEALAND
+
+            any_scope_building = {
+                is_building_type = building_motor_industry
+                level >= 5
+            }
+        }
+
+    }
+
+    prosperity_modifier = {
+        building_motor_industry_throughput_add = 0.5
+        building_automotive_industry_throughput_add = 0.5
+
+    }
+
+    ai_will_do = {
+        any_scope_state = {
+            state_region = s:STATE_SVEALAND
+
+            is_incorporated = yes
+        }
+    }
+
+    ai_construction_targets = {
+        building_motor_industry = {
+            level = 5
+            state_trigger = {
+                state_region = s:STATE_SVEALAND
+
+                is_incorporated = yes
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 3 # Higher base value for flavored companies
     }
 }

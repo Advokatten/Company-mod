@@ -9,6 +9,7 @@
   company_newspaper: "Bergens Tidende"
   company_tools: "Thunes mekaniske Værksted"
   company_railway: "Norges Statsbaner"
+  company_kongsberg: "Kongsberg Gruppen"
 
   ############### Sweden ######################
   company_railway_swe: "Statens Järnvägar"
@@ -16,5 +17,5 @@
   company_h_and_m: "Hennes & Mauritz AB"
   company_ikea: "IKEA"
   company_ica: "Inköpscentralernas aktiebolag"
-
+  company_volvo: "Volvo"
 
