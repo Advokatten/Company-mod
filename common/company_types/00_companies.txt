@@ -4,7 +4,7 @@
 
 company_bank = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/bank.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/curtiss_comp_illu_e_commerce_base.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
 
 
 
@@ -587,8 +587,8 @@ company_tools = {
 
 
 company_railway = {
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/tool.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/train.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
 
 
 
