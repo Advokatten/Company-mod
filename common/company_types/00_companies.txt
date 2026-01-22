@@ -1260,7 +1260,7 @@ company_volvo = {
 
 
 company_wifstavarfs = {
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/wifstavarfs.png"
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/wifstavars.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 
