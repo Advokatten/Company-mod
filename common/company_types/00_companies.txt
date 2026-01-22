@@ -1254,3 +1254,86 @@ company_volvo = {
         value = 3 # Higher base value for flavored companies
     }
 }
+
+
+#####################################################################################
+
+
+company_wifstavarfs = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/wifstavarfs.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+
+
+
+    preferred_headquarters = { STATE_SVEALAND }
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+                state_region = s:STATE_SVEALAND
+
+            }
+        }
+    }
+
+    building_types = {
+        building_logging_camp
+        building_shipyard
+    }
+    extension_building_types = {
+        building_rubber_plantation
+
+
+    }
+    possible_prestige_goods = {
+        prestige_good_burmese_teak
+        prestige_good_clyde_built_liners
+    }
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+            state_region = s:STATE_SVEALAND
+
+            any_scope_building = {
+                is_building_type = building_logging_camp
+                level >= 5
+            }
+        }
+
+    }
+
+    prosperity_modifier = {
+
+        building_logging_camp_throughput_add = 1
+        country_tech_spread_mult = 1
+
+    }
+
+    ai_will_do = {
+        any_scope_state = {
+            state_region = s:STATE_SVEALAND
+
+            is_incorporated = yes
+        }
+    }
+
+    ai_construction_targets = {
+        building_logging_camp = {
+            level = 5
+            state_trigger = {
+                state_region = s:STATE_SVEALAND
+
+                is_incorporated = yes
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 3 # Higher base value for flavored companies
+    }
+}
