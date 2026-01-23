@@ -1,13 +1,1 @@
-{
-  "name": "Companies",
-  "id": "",
-  "version": "1.1",
-  "supported_game_version": "1.12.*",
-  "picture": "image.png",
-  "short_description": "",
-  "tags": [],
-  "relationships": [],
-  "game_custom_data": {
-    "multiplayer_synchronized": true
-  }
-}
+{"name":"Scandinavian Companies","id":"","version":"1.1","supported_game_version":"1.12.*","short_description":"","tags":[],"relationships":[]}
