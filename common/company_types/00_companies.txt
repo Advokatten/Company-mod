@@ -364,6 +364,7 @@ company_kongsberg = {
     building_types = {
         building_arms_industry
         building_artillery_foundry
+        building_military_shipyard
     }
     extension_building_types = {
         building_munition_plant
