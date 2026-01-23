@@ -453,7 +453,7 @@ company_uncommon_mines = {
 
     }
     extension_building_types = {
-        building_tooling_workshops
+        building_tooling_workshop
         building_gold_mine
         building_oil_rig
     }
