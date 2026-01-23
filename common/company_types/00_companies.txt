@@ -1384,7 +1384,7 @@ company_Bahco = {
             is_incorporated = yes
             state_region = s:STATE_SVEALAND
             any_scope_building = {
-                is_building_type = building_tooling_workshops
+                is_building_type = building_tooling_workshop
                 level >= 2
             }
         }
