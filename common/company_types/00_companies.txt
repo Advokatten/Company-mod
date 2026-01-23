@@ -371,6 +371,7 @@ company_kongsberg = {
     possible_prestige_goods = {
         prestige_good_krupp_guns
         prestige_good_colt_revolvers
+        prestige_good_armstrong_ships
     }
 
     possible = {
@@ -1335,5 +1336,173 @@ company_wifstavarfs = {
 
     ai_weight = {
         value = 3 # Higher base value for flavored companies
+    }
+}
+
+
+
+##########################################################################
+
+company_Bahco = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/bahco.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+
+
+
+    preferred_headquarters = { STATE_SVEALAND }
+
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+                state_region = s:STATE_SVEALAND
+            }
+        }
+    }
+
+    building_types = {
+        building_tooling_workshop
+        building_logging_camp
+    }
+    extension_building_types = {
+        building_rubber_plantation
+
+    }
+    possible_prestige_goods = {
+        prestige_good_generic_tools
+
+    }
+
+
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+            state_region = s:STATE_SVEALAND
+            any_scope_building = {
+                is_building_type = building_tooling_workshops
+                level >= 2
+            }
+        }
+
+    }
+
+
+
+    prosperity_modifier = {
+        building_tooling_workshop_throughput_add = 0.5
+        building_logging_camp_throughput_add = 0.5
+
+    }
+
+    ai_will_do = {
+        any_scope_state = {
+            state_region = s:STATE_SVEALAND
+            is_incorporated = yes
+        }
+    }
+
+
+    ai_construction_targets = {
+        building_tooling_workshop = {
+            level = 1
+            state_trigger = {
+                state_region = s:STATE_SVEALAND
+                is_incorporated = yes
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 10 # Higher base value for flavored companies
+    }
+}
+
+
+##############################################################################
+
+company_Saab = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/kongsberg.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+
+    preferred_headquarters = { STATE_SVEALAND }
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+                state_region = s:STATE_SVEALAND
+
+            }
+        }
+    }
+
+    building_types = {
+        building_arms_industry
+        building_artillery_foundry
+        building_munition_plant
+        building_military_shipyard
+    }
+    extension_building_types = {
+        building_automotive_industry
+
+    }
+    possible_prestige_goods = {
+        prestige_good_saint_etienne_rifles
+    }
+
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+            state_region = s:STATE_SVEALAND
+
+            any_scope_building = {
+                is_building_type = building_arms_industry
+                level >= 1
+            }
+        }
+
+    }
+    prosperity_modifier = {
+        unit_army_offense_mult = 0.25
+        unit_army_defense_mult = 0.25
+        unit_kill_rate_add = 0.25
+        building_arms_industry_throughput_add = 0.5
+        building_artillery_throughput_add = 0.5
+        building_munition_plant_throughput_add = 0.5
+
+    }
+
+    ai_will_do = {
+        any_scope_state = {
+            state_region = s:STATE_SVEALAND
+
+            is_incorporated = yes
+
+        }
+
+    }
+
+    ai_construction_targets = {
+        building_arms_industry = {
+            level = 1
+            state_trigger = {
+                state_region = s:STATE_SVEALAND
+
+                is_incorporated = yes
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 2 # Higher base value for flavored companies
     }
 }
