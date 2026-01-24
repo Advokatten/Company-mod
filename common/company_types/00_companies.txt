@@ -1359,7 +1359,7 @@ company_Bahco = {
 ##############################################################################
 
 company_Saab = {
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/kongsberg.png"
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/saab.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
 
@@ -1434,3 +1434,96 @@ company_Saab = {
         value = 2 # Higher base value for flavored companies
     }
 }
+
+
+
+
+###############################Finland#####################################
+
+
+company_finlayson_oy = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/H&M.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
+
+
+
+    preferred_headquarters = { STATE_UUSIMAA }
+
+
+    potential = {
+        has_interest_marker_in_region = region_finland
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+
+                state_region = s:STATE_UUSIMAA
+            }
+        }
+    }
+
+    building_types = {
+        building_cotton_plantation
+
+    }
+
+
+    extension_building_types = {
+        building_textile_mill
+
+    }
+
+
+
+
+
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+
+            state_region = s:STATE_UUSIMAA
+            any_scope_building = {
+                is_building_type = building_cotton_plantation
+                level >= 5
+            }
+        }
+
+    }
+    prosperity_modifier = {
+        building_textile_mill_throughput_add = 0.5
+    }
+
+
+
+    ai_will_do = {
+        any_scope_state = {
+            is_incorporated = yes
+
+            state_region = s:STATE_UUSIMAA
+            any_scope_building = {
+                is_building_type = building_cotton_plantation
+                level >= 5
+            }
+        }
+
+    }
+
+    ai_construction_targets = {
+        building_cotton_plantation = {
+            level = 5
+            state_trigger = {
+
+                state_region = s:STATE_UUSIMAA
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 2
+    }
+}
+
+
+
+
