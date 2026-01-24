@@ -1,17 +1,17 @@
 ﻿l_english:
   ############### Norway ######################
-  company_bank: "Christiania Sparebank"
-  company_livestock_and_agriculture: "HOFF Norske Potetindustrier"
-  company_homegoods: "Porsgrunds Porselænsfabrik"
-  company_basic_metals: "Norsk Jernverk"
-  company_uncommon_mines: "Sulitjelma gruber"
-  company_newspaper: "Bergens Tidende"
-  company_tools: "Thunes mekaniske Værksted"
-  company_railway: "Norges Statsbaner"
+  company_sparebank: "Christiania Sparebank"
+  company_hoff: "HOFF Norske Potetindustrier"
+  company_porsgrunds: "Porsgrunds Porselænsfabrik"
+  company_jernverk: "Norsk Jernverk"
+  company_sulitjelma: "Sulitjelma gruber"
+  company_bergens_tidende: "Bergens Tidende"
+  company_thunes: "Thunes mekaniske Værksted"
+  company_statsbaner: "Norges Statsbaner"
   company_kongsberg: "Kongsberg Gruppen"
 
   ############### Sweden ######################
-  company_railway_swe: "Statens Järnvägar"
+  company_järnvägar: "Statens Järnvägar"
   company_nordea: "Nordea"
   company_h_and_m: "Hennes & Mauritz AB"
   company_ikea: "IKEA"

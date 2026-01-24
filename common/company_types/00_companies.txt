@@ -1,6 +1,6 @@
 ﻿#####################################Norway################################################
 
-company_bank = {
+company_sparebank = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/sparebank1.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
 
@@ -27,11 +27,9 @@ company_bank = {
         building_port
     }
     extension_building_types = {
-        building_railway
         building_art_academy
     }
     possible_prestige_goods = {
-        prestige_good_generic_paper
         prestige_good_grand_strategy_games
     }
 
@@ -49,16 +47,7 @@ company_bank = {
     }
     prosperity_modifier = {
         investment_pool_contribution_mult = 0.05
-        construction_sector_throughput_mult = 0.5
-        country_loan_interest_rate_mult = -0.05
-        state_farmers_investment_pool_contribution_add = 0.5
-        state_shopkeepers_investment_pool_contribution_add = 0.5
-        state_clergymen_investment_pool_contribution_add = 0.5
-        state_aristocrats_investment_pool_contribution_add = 0.5
-        state_capitalists_investment_pool_contribution_add = 0.5
-        country_government_dividends_reinvestment_add = 0.5
         government_wages_mult = -0.05
-        country_max_companies_add = 2
     }
     ai_will_do = {
         any_scope_state = {
@@ -79,7 +68,7 @@ company_bank = {
 
 ############################################################
 
-company_livestock_and_agriculture = {
+company_hoff = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/Hoff.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rice.dds"
 
@@ -104,9 +93,6 @@ company_livestock_and_agriculture = {
     building_types = {
         building_wheat_farm
         building_rye_farm
-        building_rice_farm
-        building_maize_farm
-        building_millet_farm
         building_livestock_ranch
     }
     extension_building_types = {
@@ -114,8 +100,6 @@ company_livestock_and_agriculture = {
     }
     possible_prestige_goods = {
         prestige_good_generic_groceries
-        prestige_good_river_plate_beef
-        prestige_good_pannonian_patent_flour
     }
     possible = {
         any_scope_state = {
@@ -132,8 +116,7 @@ company_livestock_and_agriculture = {
 
     prosperity_modifier = {
         building_food_industry_throughput_add = 0.5
-        country_tech_spread_mult = 1
-        interest_group_ig_rural_folk_approval_add = -10
+        country_tech_spread_mult = 0.1
     }
 
     ai_will_do = {
@@ -164,7 +147,7 @@ company_livestock_and_agriculture = {
 ############################################################
 
 
-company_homegoods = {
+company_porsgrunds = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/Porsgrunds.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
 
@@ -187,8 +170,6 @@ company_homegoods = {
     }
 
     building_types = {
-        building_textile_mill
-        building_furniture_manufactory
         building_glassworks
     }
 
@@ -201,10 +182,6 @@ company_homegoods = {
     possible_prestige_goods = {
         prestige_good_canton_porcelain
         prestige_good_bohemian_crystal
-        prestige_good_haute_couture
-        prestige_good_bentwood_furniture
-        prestige_good_english_upholstery
-        prestige_good_generic_clothes
     }
 
 
@@ -214,16 +191,14 @@ company_homegoods = {
 
             state_region = s:STATE_WESTERN_NORWAY
             any_scope_building = {
-                is_building_type = building_textile_mill
-                level >= 2
+                is_building_type = building_glassworks
+                level >= 5
             }
         }
 
     }
     prosperity_modifier = {
-        state_loyalists_from_political_movements_mult = 0.075
-        state_radicals_from_political_movements_mult = -0.1
-        country_production_tech_spread_mult = 0.6
+        state_loyalists_from_political_movements_mult = 0.1
         country_prestige_mult = 0.1
     }
 
@@ -235,16 +210,16 @@ company_homegoods = {
 
             state_region = s:STATE_WESTERN_NORWAY
             any_scope_building = {
-                is_building_type = building_textile_mill
-                level >= 2
+                is_building_type = building_glassworks
+                level >= 5
             }
         }
 
     }
 
     ai_construction_targets = {
-        building_textile_mill = {
-            level = 2
+        building_glassworks = {
+            level = 5
             state_trigger = {
 
                 state_region = s:STATE_WESTERN_NORWAY
@@ -262,7 +237,7 @@ company_homegoods = {
 ############################################################
 
 
-company_basic_metals = {
+company_jernverk = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/jernverk.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -285,14 +260,12 @@ company_basic_metals = {
 
     building_types = {
         building_iron_mine
-        building_steel_mill
         building_coal_mine
     }
     extension_building_types = {
-        building_automotive_industry
+        building_steel_mill
     }
     possible_prestige_goods = {
-        prestige_good_sheffield_steel
         prestige_good_swedish_bar_iron
     }
 
@@ -303,21 +276,20 @@ company_basic_metals = {
             state_region = s:STATE_NORTHERN_NORWAY
             any_scope_building = {
                 is_building_type = building_iron_mine
-                level >= 2
+                level >= 5
             }
         }
     }
 
     prosperity_modifier = {
-        state_loyalists_from_political_movements_mult = 0.075
-        state_radicals_from_political_movements_mult = -0.1
-        country_production_tech_spread_mult = 0.6
-        country_prestige_mult = 0.1
+        building_steel_mill_throughput_add = 0.5
+        country_production_tech_spread_mult = 0.1
+
     }
 
     ai_construction_targets = {
         building_iron_mine = {
-            level = 2
+            level = 5
             state_trigger = {
                 state_region = s:STATE_NORTHERN_NORWAY
             }
@@ -363,16 +335,13 @@ company_kongsberg = {
 
     building_types = {
         building_arms_industry
-        building_artillery_foundry
-        building_military_shipyard
     }
     extension_building_types = {
         building_munition_plant
     }
     possible_prestige_goods = {
-        prestige_good_krupp_guns
         prestige_good_colt_revolvers
-        prestige_good_armstrong_ships
+
     }
 
     possible = {
@@ -382,19 +351,14 @@ company_kongsberg = {
 
             any_scope_building = {
                 is_building_type = building_arms_industry
-                level >= 1
+                level >= 5
             }
         }
 
     }
     prosperity_modifier = {
-        unit_army_offense_mult = 0.5
-        unit_army_defense_mult = 0.5
-        unit_kill_rate_add = 1
-        building_arms_industry_throughput_add = 0.90
-        building_artillery_throughput_add = 0.90
-        building_munition_plant_throughput_add = 0.90
-
+        unit_army_offense_mult = 0.25
+        unit_army_defense_mult = 0.25
     }
 
     ai_will_do = {
@@ -409,7 +373,7 @@ company_kongsberg = {
 
     ai_construction_targets = {
         building_arms_industry = {
-            level = 1
+            level = 5
             state_trigger = {
                 state_region = s:STATE_EASTERN_NORWAY
 
@@ -428,7 +392,7 @@ company_kongsberg = {
 
 
 
-company_uncommon_mines = {
+company_sulitjelma = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/Sulitjelma.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -455,11 +419,8 @@ company_uncommon_mines = {
     }
     extension_building_types = {
         building_tooling_workshop
-        building_gold_mine
-        building_oil_rig
     }
     possible_prestige_goods = {
-        prestige_good_baku_oil
         prestige_good_sicilian_sulfur
     }
 
@@ -470,16 +431,13 @@ company_uncommon_mines = {
             state_region = s:STATE_WESTERN_NORWAY
             any_scope_building = {
                 is_building_type = building_sulfur_mine
-                level >= 1
+                level >= 5
             }
         }
 
     }
     prosperity_modifier = {
-        state_construction_mult = 0.1
         building_construction_sector_throughput_add = 0.1
-        state_migration_pull_mult = 0.1
-        country_minting_mult = 0.05
         state_loyalists_from_political_movements_mult = 0.05
     }
 
@@ -496,7 +454,7 @@ company_uncommon_mines = {
 
     ai_construction_targets = {
         building_sulfur_mine = {
-            level = 1
+            level = 5
             state_trigger = {
 
                 state_region = s:STATE_WESTERN_NORWAY
@@ -516,7 +474,7 @@ company_uncommon_mines = {
 ############################################################
 
 
-company_newspaper = {
+company_bergens_tidende = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/bergenstidene.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
 
@@ -544,7 +502,6 @@ company_newspaper = {
     }
     possible_prestige_goods = {
         prestige_good_generic_paper
-        prestige_good_ericsson_apparatus
     }
 
     possible = {
@@ -554,7 +511,7 @@ company_newspaper = {
 
             any_scope_building = {
                 is_building_type = building_paper_mill
-                level >= 2
+                level >= 5
             }
         }
 
@@ -562,11 +519,7 @@ company_newspaper = {
     prosperity_modifier = {
         state_loyalists_from_political_movements_mult = 0.05
         state_radicals_from_political_movements_mult = -0.1
-        country_prestige_mult = 0.1
-        country_influence_mult = 0.1
         interest_group_ig_intelligentsia_approval_add = 0.1
-        qualifications_gain_mult = 0.10
-        education_access_mult = 0.05
     }
 
     ai_will_do = {
@@ -581,7 +534,7 @@ company_newspaper = {
 
     ai_construction_targets = {
         building_paper_mill = {
-            level = 1
+            level = 5
             state_trigger = {
                 state_region = s:STATE_EASTERN_NORWAY
 
@@ -596,7 +549,7 @@ company_newspaper = {
 }
 #############################################################
 
-company_tools = {
+company_thunes = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/Thunes.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
@@ -624,11 +577,9 @@ company_tools = {
     }
     extension_building_types = {
         building_rubber_plantation
-        building_coal_mine
     }
     possible_prestige_goods = {
         prestige_good_generic_tools
-        prestige_good_burmese_teak
     }
 
 
@@ -638,7 +589,7 @@ company_tools = {
             state_region = s:STATE_NORTHERN_NORWAY
             any_scope_building = {
                 is_building_type = building_logging_camp
-                level >= 2
+                level >= 5
             }
         }
 
@@ -648,8 +599,8 @@ company_tools = {
 
     prosperity_modifier = {
         building_group_bg_manufacturing_throughput_add = 0.5
-        state_infrastructure_from_population_add = 0.7
-        state_infrastructure_from_population_max_add = 15
+        state_infrastructure_from_population_add = 0.5
+        state_infrastructure_from_population_max_add = 50
     }
 
     ai_will_do = {
@@ -662,7 +613,7 @@ company_tools = {
 
     ai_construction_targets = {
         building_logging_camp = {
-            level = 2
+            level = 5
             state_trigger = {
                 state_region = s:STATE_NORTHERN_NORWAY
                 is_incorporated = yes
@@ -679,7 +630,7 @@ company_tools = {
 ##############################################################
 
 
-company_railway = {
+company_statsbaner = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/nsb.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
 
@@ -760,7 +711,7 @@ company_railway = {
 
 ##################################### Sweden ################################################
 
-company_railway_swe = {
+company_järnvägar = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/SJ.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
 
@@ -799,7 +750,7 @@ company_railway_swe = {
             state_region = s:STATE_SVEALAND
             any_scope_building = {
                 is_building_type = building_railway
-                level >= 2
+                level >= 5
             }
         }
 
@@ -808,9 +759,9 @@ company_railway_swe = {
 
 
     prosperity_modifier = {
-        state_infrastructure_from_population_add = 0.7
+        state_infrastructure_from_population_add = 0.5
         state_infrastructure_from_population_max_add = 15
-        country_production_tech_spread_mult = 0.6
+        country_production_tech_spread_mult = 0.1
     }
 
     ai_will_do = {
@@ -823,7 +774,7 @@ company_railway_swe = {
 
     ai_construction_targets = {
         building_railway = {
-            level = 1
+            level = 5
             state_trigger = {
                 state_region = s:STATE_SVEALAND
                 is_incorporated = yes
@@ -863,10 +814,9 @@ company_nordea = {
 
     building_types = {
         building_paper_mill
-        building_port
     }
     extension_building_types = {
-        building_railway
+        building_art_academy
     }
 
 
@@ -883,16 +833,12 @@ company_nordea = {
 
     }
     prosperity_modifier = {
-        investment_pool_contribution_mult = 0.05
-        construction_sector_throughput_mult = 0.05
-        country_loan_interest_rate_mult = -0.05
         state_farmers_investment_pool_contribution_add = 0.05
         state_shopkeepers_investment_pool_contribution_add = 0.05
         state_clergymen_investment_pool_contribution_add = 0.05
         state_aristocrats_investment_pool_contribution_add = 0.05
         state_capitalists_investment_pool_contribution_add = 0.05
         country_government_dividends_reinvestment_add = 0.5
-        country_max_companies_add = 1
     }
     ai_will_do = {
         any_scope_state = {
@@ -940,18 +886,16 @@ company_h_and_m = {
 
     building_types = {
         building_textile_mill
-        building_cotton_plantation
 
     }
 
 
     extension_building_types = {
-        building_silk_plantation
+        building_cotton_plantation
     }
 
 
     possible_prestige_goods = {
-        prestige_good_haute_couture
         prestige_good_generic_clothes
     }
 
@@ -963,16 +907,14 @@ company_h_and_m = {
             state_region = s:STATE_SVEALAND
             any_scope_building = {
                 is_building_type = building_textile_mill
-                level >= 2
+                level >= 5
             }
         }
 
     }
     prosperity_modifier = {
-        state_loyalists_from_political_movements_mult = 0.075
+        state_loyalists_from_political_movements_mult = 0.5
         state_radicals_from_political_movements_mult = -0.1
-        country_production_tech_spread_mult = 0.6
-        country_prestige_mult = 0.1
     }
 
 
@@ -984,7 +926,7 @@ company_h_and_m = {
             state_region = s:STATE_SVEALAND
             any_scope_building = {
                 is_building_type = building_textile_mill
-                level >= 2
+                level >= 5
             }
         }
 
@@ -992,7 +934,7 @@ company_h_and_m = {
 
     ai_construction_targets = {
         building_textile_mill = {
-            level = 2
+            level = 5
             state_trigger = {
 
                 state_region = s:STATE_SVEALAND
@@ -1042,7 +984,6 @@ company_ikea = {
 
     possible_prestige_goods = {
         prestige_good_bentwood_furniture
-        prestige_good_english_upholstery
     }
 
 
@@ -1053,15 +994,13 @@ company_ikea = {
             state_region = s:STATE_SVEALAND
             any_scope_building = {
                 is_building_type = building_furniture_manufactory
-                level >= 2
+                level >= 5
             }
         }
 
     }
     prosperity_modifier = {
-        state_loyalists_from_political_movements_mult = 0.075
-        state_radicals_from_political_movements_mult = -0.1
-        country_production_tech_spread_mult = 0.6
+        building_furniture_manufactory_throughput_add = 0.5
         country_prestige_mult = 0.1
     }
 
@@ -1074,7 +1013,7 @@ company_ikea = {
             state_region = s:STATE_SVEALAND
             any_scope_building = {
                 is_building_type = building_furniture_manufactory
-                level >= 2
+                level >= 5
             }
         }
 
@@ -1082,7 +1021,7 @@ company_ikea = {
 
     ai_construction_targets = {
         building_furniture_manufactory = {
-            level = 2
+            level = 5
             state_trigger = {
 
                 state_region = s:STATE_SVEALAND
@@ -1124,11 +1063,7 @@ company_ica = {
 
     }
     extension_building_types = {
-        building_wheat_farm
         building_rye_farm
-        building_rice_farm
-        building_maize_farm
-        building_millet_farm
         building_livestock_ranch
     }
     possible_prestige_goods = {
@@ -1140,7 +1075,7 @@ company_ica = {
             state_region = s:STATE_SVEALAND
 
             any_scope_building = {
-                is_building_type = building_livestock_ranch
+                is_building_type = building_food_industry
                 level >= 5
             }
         }
@@ -1149,8 +1084,7 @@ company_ica = {
 
     prosperity_modifier = {
         building_food_industry_throughput_add = 0.5
-        country_tech_spread_mult = 1
-        interest_group_ig_rural_folk_approval_add = -10
+        state_birth_rate_mult = 0.05
     }
 
     ai_will_do = {
@@ -1162,7 +1096,7 @@ company_ica = {
     }
 
     ai_construction_targets = {
-        building_livestock_ranch = {
+        building_food_industry = {
             level = 5
             state_trigger = {
                 state_region = s:STATE_SVEALAND
@@ -1212,7 +1146,6 @@ company_volvo = {
     }
     possible_prestige_goods = {
         prestige_good_schichau_engines
-        prestige_good_ford_automobiles
     }
     possible = {
         any_scope_state = {
@@ -1288,12 +1221,11 @@ company_wifstavarfs = {
         building_shipyard
     }
     extension_building_types = {
-        building_rubber_plantation
+        building_military_shipyard
 
 
     }
     possible_prestige_goods = {
-        prestige_good_burmese_teak
         prestige_good_clyde_built_liners
     }
     possible = {
@@ -1311,8 +1243,8 @@ company_wifstavarfs = {
 
     prosperity_modifier = {
 
-        building_logging_camp_throughput_add = 1
-        country_tech_spread_mult = 1
+        building_logging_camp_throughput_add = 0.5
+        country_military_tech_spread_mult = 0.1
 
     }
 
@@ -1386,7 +1318,7 @@ company_Bahco = {
             state_region = s:STATE_SVEALAND
             any_scope_building = {
                 is_building_type = building_tooling_workshop
-                level >= 2
+                level >= 5
             }
         }
 
@@ -1410,7 +1342,7 @@ company_Bahco = {
 
     ai_construction_targets = {
         building_tooling_workshop = {
-            level = 1
+            level = 5
             state_trigger = {
                 state_region = s:STATE_SVEALAND
                 is_incorporated = yes
@@ -1449,11 +1381,10 @@ company_Saab = {
     building_types = {
         building_arms_industry
         building_artillery_foundry
-        building_munition_plant
-        building_military_shipyard
+
     }
     extension_building_types = {
-        building_automotive_industry
+        building_munition_plant
 
     }
     possible_prestige_goods = {
@@ -1467,7 +1398,7 @@ company_Saab = {
 
             any_scope_building = {
                 is_building_type = building_arms_industry
-                level >= 1
+                level >= 5
             }
         }
 
@@ -1475,10 +1406,6 @@ company_Saab = {
     prosperity_modifier = {
         unit_army_offense_mult = 0.25
         unit_army_defense_mult = 0.25
-        unit_kill_rate_add = 0.25
-        building_arms_industry_throughput_add = 0.5
-        building_artillery_throughput_add = 0.5
-        building_munition_plant_throughput_add = 0.5
 
     }
 
@@ -1494,7 +1421,7 @@ company_Saab = {
 
     ai_construction_targets = {
         building_arms_industry = {
-            level = 1
+            level = 5
             state_trigger = {
                 state_region = s:STATE_SVEALAND
 
