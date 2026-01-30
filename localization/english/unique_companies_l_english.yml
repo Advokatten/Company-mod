@@ -1,29 +1,30 @@
 ﻿l_english:
   ############### Norway ######################
-  company_sparebank: "Christiania Sparebank"
-  company_hoff: "HOFF Norske Potetindustrier"
-  company_porsgrunds: "Porsgrunds Porselænsfabrik"
-  company_jernverk: "Norsk Jernverk"
-  company_sulitjelma: "Sulitjelma gruber"
-  company_bergens_tidende: "Bergens Tidende"
-  company_thunes: "Thunes mekaniske Værksted"
-  company_statsbaner: "Norges Statsbaner"
-  company_kongsberg: "Kongsberg Gruppen"
+  company_norges_bank: "Norges Bank" # Founded 1816
+  company_hoff: "HOFF Norske Potetindustrier" # Founded 1879
+  company_porsgrunds: "Porsgrunds Porselænsfabrik" # Founded 1885
+  company_jernverk: "Norsk Jernverk" # Founded in 1946 i just cba finding a company that did iron before that. Sue me
+  company_sulitjelma: "Sulitjelma gruber" # Founded 1891
+  company_bergens_tidende: "Bergens Tidende" # Founded 1868
+  company_thunes: "Thunes mekaniske Værksted" # Possibly founded in 1815
+  company_statsbaner: "Norges Statsbaner" # Founded 1883
+  company_kongsberg: "Kongsberg Gruppen" # Founded 1814
+  company_bama: "Bama" # Founded 1886
 
   ############### Sweden ######################
-  company_järnvägar: "Statens Järnvägar"
-  company_nordea: "Nordea"
-  company_h_and_m: "Hennes & Mauritz AB"
-  company_ikea: "IKEA"
-  company_ica: "Inköpscentralernas aktiebolag"
-  company_volvo: "Volvo"
-  company_wifstavarfs: "Wifstavarfs"
-  company_Bahco: "Bacho"
-  company_Saab: "Saab AB"
+  company_järnvägar: "Statens Järnvägar" # Founded 1856
+  company_swedbank: "Swedbank" # Founded 1820
+  company_strimberg: "C.H. Strimberg" # I found sources from tekniskamuseet(Swedish museum) saying C.H. Strimberg founded textile mills in the 1800s notably in Kullens 1805 and Sjuntorps 1813
+  company_ikea: "IKEA" # Founded in 1943, same as norsk jernverk i just cba finding a single factory making furniture because its almost no information out ther on names only that it existed in places like Bodafors, Småland & Sjuhäradsbygden, Norrköping
+  company_ica: "Inköpscentralernas aktiebolag" # Founded 1938. Sweden did not have much of this shit in the 1800s but did import it apparently, im just gonna have this company exist almost 100 years early since its fun gameplay to have it possible as a company.
+  company_volvo: "Volvo" # Founded in 1927. Sweden did not have car manufacturing until the 1900s but its more fun to have it be a thing
+  company_wifstavarfs: "Wifstavarfs" #According to svt.se Wiftsavarfs was founded in 1798. I cant find the source they used but im gonna go on a limb and use it as a company.
+  company_Bahco: "Bacho" # Founded 1886
+  company_Saab: "Saab AB" # Founded in 1937 but too iconic as a weapons manufacturer to not have as a company in my oppinion.
 
   #####################Denmark##################
-  company_Goldschmidt_&_nordholm: "Goldschmidt & Nordholm"
-  company_danish_east_indies: "Danish East Indies Company"
+  company_Goldschmidt_&_nordholm: "Goldschmidt & Nordholm" # I could not find the exact date it was founded but Benny Goldschmidt inhereted the factory in 1842 according to wikipedia. This is so niche it seems dumb to be fake.
+  company_danish_east_indies: "Danish East Indies Company" # This company stopped existing in the 1700s but it gives denmark more flavour in gameplay so i want it in.
 
   ###################Finland##################
-  company_finlayson_oy: "Finlayson Oy"
+  company_finlayson_oy: "Finlayson Oy" # Founded in 1820 by a scot in Finland of all places. It is cool so i will use it as a company.
