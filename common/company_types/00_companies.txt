@@ -1,7 +1,7 @@
 ﻿#####################################Norway################################################
 
-company_sparebank = {
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/sparebank1.png"
+company_norges_bank = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/NorgesBank.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
 
 
@@ -71,7 +71,7 @@ company_sparebank = {
 
 company_hoff = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/Hoff.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rice.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
 
 
 
@@ -149,10 +149,84 @@ company_hoff = {
 
 ############################################################
 
+company_bama = {
+
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/Bama.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+
+    preferred_headquarters = { STATE_WESTERN_NORWAY }
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    building_types = {
+        building_banana_plantation
+        building_coffee_plantation
+    }
+
+    extension_building_types = {
+        building_tea_plantation
+    }
+
+    possible_prestige_goods = {
+        prestige_good_gros_michel_banana
+    }
+
+    possible = {
+        any_scope_state = {
+
+            any_scope_building = {
+                OR = {
+                    is_building_type = building_banana_plantation
+                }
+                level >= 5
+            }
+        }
+    }
+
+    prosperity_modifier = {
+        building_group_bg_plantations_throughput_add = 0.5
+        building_group_bg_plantations_self_investment_chance_add = 0.1
+
+    }
+
+    ai_will_do = {
+        any_scope_state = {
+
+            any_scope_building = {
+                OR = {
+                    is_building_type = building_banana_plantation
+                }
+                level >= 5
+            }
+        }
+    }
+
+    ai_construction_targets = {
+        building_arms_industry = {
+            level = 5
+            state_trigger = {
+
+
+                is_incorporated = yes
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 2
+    }
+}
+
+
+############################################################
+
 
 company_porsgrunds = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/Porsgrunds.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
 
 
@@ -243,7 +317,7 @@ company_porsgrunds = {
 
 company_jernverk = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/jernverk.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 
 
     preferred_headquarters = { STATE_NORTHERN_NORWAY }
@@ -398,7 +472,7 @@ company_kongsberg = {
 
 company_sulitjelma = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/Sulitjelma.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 
 
     preferred_headquarters = { STATE_WESTERN_NORWAY }
@@ -555,7 +629,7 @@ company_bergens_tidende = {
 
 company_thunes = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/Thunes.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
 
 
@@ -795,8 +869,8 @@ company_järnvägar = {
 #############################################################
 
 
-company_nordea = {
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/Nordea.png"
+company_swedbank = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/Swedbank.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
 
 
@@ -867,9 +941,9 @@ company_nordea = {
 
 
 
-company_h_and_m = {
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/H&M.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
+company_strimberg = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/textile.png" #I could not find a company or textile mill that had a icon i could use so i found a generic png
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
 
 
@@ -956,7 +1030,7 @@ company_h_and_m = {
 
 company_ikea = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/ikea.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
 
 
@@ -1043,7 +1117,7 @@ company_ikea = {
 
 company_ica = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/ica.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rice.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
 
 
@@ -1201,7 +1275,7 @@ company_volvo = {
 
 company_wifstavarfs = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/wifstavars.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_harbor_shipbuilding.dds"
 
 
 
@@ -1283,7 +1357,7 @@ company_wifstavarfs = {
 
 company_Bahco = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/bahco.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
 
 
@@ -1449,7 +1523,7 @@ company_Saab = {
 
 company_Goldschmidt_&_nordholm = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/Goldschmidt_&_Nordholms.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
 
 
@@ -1620,7 +1694,7 @@ company_danish_east_indies = {
 
 company_finlayson_oy = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/finlayson.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
 
 
