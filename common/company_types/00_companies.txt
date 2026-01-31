@@ -119,7 +119,7 @@ company_hoff = {
         state_birth_rate_mult = 0.05
         building_food_industry_throughput_add = 0.5
         country_tech_spread_mult = 0.1
-        country_acceptance_no_shared_heritage_trait_add = 1
+        country_acceptance_no_shared_heritage_trait_add = 50
     }
 
     ai_will_do = {
@@ -1275,7 +1275,7 @@ company_volvo = {
 
 company_wifstavarfs = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/wifstavars.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_harbor_shipbuilding.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
 
 
 
