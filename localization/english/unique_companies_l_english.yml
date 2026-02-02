@@ -24,7 +24,9 @@
 
   #####################Denmark##################
   company_Goldschmidt_&_nordholm: "Goldschmidt & Nordholm" # I could not find the exact date it was founded but Benny Goldschmidt inhereted the factory in 1842 according to wikipedia. This is so niche it seems dumb to be fake.
-  company_danish_east_indies: "Danish East Indies Company" # This company stopped existing in the 1700s but it gives denmark more flavour in gameplay so i want it in.
-
+  company_danish_africa: "Danish Africa company" # This company is completely made up by me for fun
+  company_carlsberg: "Carlsberg" # Founded in 1847
+  company_hans_smith: "Hans Smith Tooling" # This is the original person that founded what is today Vestas Wind systems A/S. Hans Smith Hansen bought a blacksmith shop in 1898 and this sounds like a perfect excuse for a tooling company to me.
+  company_o_k: "Det Østasiatiske Kompagni" # Founded in 1897 
   ###################Finland##################
   company_finlayson_oy: "Finlayson Oy" # Founded in 1820 by a scot in Finland of all places. It is cool so i will use it as a company.
