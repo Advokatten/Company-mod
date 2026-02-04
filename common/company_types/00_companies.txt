@@ -100,7 +100,8 @@ company_hoff = {
         building_food_industry
     }
     possible_prestige_goods = {
-        prestige_good_generic_groceries
+        prestige_good_potato_flour
+        prestige_good_potato
     }
     possible = {
         any_scope_state = {
@@ -171,7 +172,7 @@ company_bama = {
     }
 
     possible_prestige_goods = {
-        prestige_good_gros_michel_banana
+        prestige_good_bama_bananas
     }
 
     possible = {
@@ -418,7 +419,7 @@ company_kongsberg = {
         building_munition_plant
     }
     possible_prestige_goods = {
-        prestige_good_colt_revolvers
+        prestige_good_krag_jørgensen
 
     }
 
@@ -1610,9 +1611,9 @@ company_Goldschmidt_&_nordholm = {
 
 ###########################################################################
 
-company_danish_africa = {
+company_danish_gold_coast = {
 
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/danish_east_indies.png"
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/dgc.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
 
@@ -1693,7 +1694,7 @@ company_danish_africa = {
 
 company_carlsberg = {
     icon = "gfx/interface/icons/company_icons/historical_company_icons/carlsberg.png"
-    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
 
 
@@ -1720,7 +1721,7 @@ company_carlsberg = {
         building_rye_farm
     }
     possible_prestige_goods = {
-        prestige_good_bacardi_rum
+        prestige_good_carlsberg
     }
     possible = {
         any_scope_state = {
@@ -1728,7 +1729,7 @@ company_carlsberg = {
             state_region = s:STATE_ZEALAND
 
             any_scope_building = {
-                is_building_type = building_livestock_ranch
+                is_building_type = building_food_industry
                 level >= 5
             }
         }
@@ -1749,7 +1750,7 @@ company_carlsberg = {
     }
 
     ai_construction_targets = {
-        building_livestock_ranch = {
+        building_food_industry = {
             level = 5
             state_trigger = {
                 state_region = s:STATE_ZEALAND
@@ -1785,7 +1786,7 @@ company_hans_smith = {
     attainable = {
         hidden_trigger = { # Hide attainable if it's always fulfilled by possible
             any_scope_state = {
-                state_region = s:STATE_SVEALAND
+                state_region = s:STATE_ZEALAND
             }
         }
     }
@@ -1807,7 +1808,7 @@ company_hans_smith = {
     possible = {
         any_scope_state = {
             is_incorporated = yes
-            state_region = s:STATE_SVEALAND
+            state_region = s:STATE_ZEALAND
             any_scope_building = {
                 is_building_type = building_tooling_workshop
                 level >= 5
@@ -1826,7 +1827,7 @@ company_hans_smith = {
 
     ai_will_do = {
         any_scope_state = {
-            state_region = s:STATE_SVEALAND
+            state_region = s:STATE_ZEALAND
             is_incorporated = yes
         }
     }
@@ -1836,7 +1837,7 @@ company_hans_smith = {
         building_tooling_workshop = {
             level = 5
             state_trigger = {
-                state_region = s:STATE_SVEALAND
+                state_region = s:STATE_ZEALAND
                 is_incorporated = yes
             }
         }
@@ -1852,7 +1853,7 @@ company_hans_smith = {
 
 
 company_o_k = {
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/carlsberg.png"
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/danish_east_indies.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_rye.dds"
 
 
@@ -1883,7 +1884,7 @@ company_o_k = {
         building_tobacco_plantation
     }
     possible_prestige_goods = {
-        prestige_good_bacardi_rum
+        prestige_good_clyde_built_liners
     }
     possible = {
         any_scope_state = {
@@ -1891,7 +1892,7 @@ company_o_k = {
             state_region = s:STATE_ZEALAND
 
             any_scope_building = {
-                is_building_type = building_livestock_ranch
+                is_building_type = building_shipyard
                 level >= 5
             }
         }
@@ -1912,7 +1913,7 @@ company_o_k = {
     }
 
     ai_construction_targets = {
-        building_livestock_ranch = {
+        building_shipyard = {
             level = 5
             state_trigger = {
                 state_region = s:STATE_ZEALAND
