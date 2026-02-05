@@ -258,7 +258,7 @@ company_porsgrunds = {
 
 
     possible_prestige_goods = {
-        prestige_good_canton_porcelain
+        prestige_good_porsgrunds_porselen
         prestige_good_bohemian_crystal
     }
 
