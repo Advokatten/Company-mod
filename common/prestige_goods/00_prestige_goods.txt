@@ -318,6 +318,30 @@ prestige_good_carlsberg = {
     texture = "gfx/interface/icons/goods_icons/prestige_goods/beer.dds"
 }
 
+prestige_good_Norwegian_iron_bar = {
+    base_good = iron
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/prestige_goods/ironbar.dds"
+}
+
+prestige_good_norwegian_steel = {
+    base_good = steel
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/prestige_goods/steel.dds"
+}
+
+prestige_good_norsk_lokomotiv_motor = {
+    base_good = engines
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/prestige_goods/Engine.dds"
+}
+
+prestige_good_sulitjelma_svovel = {
+    base_good = sulfur
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/prestige_goods/Svovel.dds"
+}
+
 
 prestige_good_krag_jørgensen = {
     base_good = small_arms
@@ -347,6 +371,42 @@ prestige_good_porsgrunds_porselen = {
     base_good = porcelain
     prestige_bonus = 0.1
     texture = "gfx/interface/icons/goods_icons/prestige_goods/porcelain.dds"
+}
+
+prestige_good_hadeland_glass = {
+    base_good = glass
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/prestige_goods/Glass.dds"
+}
+
+prestige_good_bergens_tidende = {
+    base_good = paper
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/prestige_goods/bergenstidende.dds"
+}
+
+prestige_good_thunes_tools = {
+    base_good = tools
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/prestige_goods/tools.dds"
+}
+
+prestige_good_billy_bookcase = {
+    base_good = furniture
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/prestige_goods/bookcase.dds"
+}
+
+prestige_good_sj_a = {
+    base_good = engines
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/prestige_goods/Train_engine.dds"
+}
+
+prestige_good_volvo_automobiles = {
+    base_good = automobiles
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/prestige_goods/volvo.dds"
 }
 
 

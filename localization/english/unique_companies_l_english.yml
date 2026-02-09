@@ -10,6 +10,7 @@
   company_statsbaner: "Norges Statsbaner" # Founded 1883
   company_kongsberg: "Kongsberg Gruppen" # Founded 1814
   company_bama: "Bama" # Founded 1886
+  company_hadeland_glassverk: "Hadeland Glassverk" # Founded in 1762
 
   ############### Sweden ######################
   company_järnvägar: "Statens Järnvägar" # Founded 1856
@@ -38,4 +39,11 @@
   prestige_good_potato_starch: "Potato Starch"
   prestige_good_potato: "Potato"
   prestige_good_bama_bananas: "Bama Banana"
-  prestige_good_porsgrunds_porselen: "Porsgrunds Porselæn"
+  prestige_good_porsgrunds_porselen: "Porsgrund Porselæn"
+  prestige_good_norwegian_steel: "Norsk Stål"
+  prestige_good_Norwegian_iron_bar: "Norsk Jern"
+  prestige_good_hadeland_glass: "Hadeland Glass"
+  prestige_good_sulitjelma_svovel: "Sulitjelma Svovel"
+  prestige_good_bergens_tidende: "Bergens Tidende"
+  prestige_good_thunes_tools: "Thunes Værktøy"
+  prestige_good_norsk_lokomotiv_motor: "Norsk Motor"

@@ -100,7 +100,7 @@ company_hoff = {
         building_food_industry
     }
     possible_prestige_goods = {
-        prestige_good_potato_flour
+        prestige_good_potato_starch
         prestige_good_potato
     }
     possible = {
@@ -259,7 +259,6 @@ company_porsgrunds = {
 
     possible_prestige_goods = {
         prestige_good_porsgrunds_porselen
-        prestige_good_bohemian_crystal
     }
 
 
@@ -279,6 +278,93 @@ company_porsgrunds = {
         state_loyalists_from_political_movements_mult = 0.1
         building_glassworks_throughput_add = 0.5
         country_prestige_mult = 0.1
+    }
+
+
+
+    ai_will_do = {
+        any_scope_state = {
+            is_incorporated = yes
+
+            state_region = s:STATE_WESTERN_NORWAY
+            any_scope_building = {
+                is_building_type = building_glassworks
+                level >= 5
+            }
+        }
+
+    }
+
+    ai_construction_targets = {
+        building_glassworks = {
+            level = 5
+            state_trigger = {
+
+                state_region = s:STATE_WESTERN_NORWAY
+            }
+        }
+    }
+
+    ai_weight = {
+        value = 2
+    }
+}
+
+############################################################
+
+company_hadeland_glassverk = {
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/hadeland.png"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+
+
+
+    preferred_headquarters = { STATE_WESTERN_NORWAY }
+
+
+    potential = {
+        has_interest_marker_in_region = region_baltic
+    }
+
+    attainable = {
+        hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+            any_scope_state = {
+
+                state_region = s:STATE_WESTERN_NORWAY
+            }
+        }
+    }
+
+    building_types = {
+        building_glassworks
+    }
+
+
+    extension_building_types = {
+        building_logging_camp
+    }
+
+
+    possible_prestige_goods = {
+        prestige_good_hadeland_glass
+    }
+
+
+    possible = {
+        any_scope_state = {
+            is_incorporated = yes
+
+            state_region = s:STATE_WESTERN_NORWAY
+            any_scope_building = {
+                is_building_type = building_glassworks
+                level >= 5
+            }
+        }
+
+    }
+    prosperity_modifier = {
+        country_society_tech_research_speed_mult  = 0.1
+        building_glassworks_throughput_add = 0.5
+
     }
 
 
@@ -344,7 +430,8 @@ company_jernverk = {
         building_steel_mill
     }
     possible_prestige_goods = {
-        prestige_good_swedish_bar_iron
+        prestige_good_Norwegian_iron_bar
+        prestige_good_norwegian_steel
     }
 
 
@@ -500,7 +587,7 @@ company_sulitjelma = {
         building_tooling_workshop
     }
     possible_prestige_goods = {
-        prestige_good_sicilian_sulfur
+        prestige_good_sulitjelma_svovel
     }
 
     possible = {
@@ -580,7 +667,7 @@ company_bergens_tidende = {
         building_electrics_industry
     }
     possible_prestige_goods = {
-        prestige_good_generic_paper
+        prestige_good_bergens_tidende
     }
 
     possible = {
@@ -658,7 +745,7 @@ company_thunes = {
         building_rubber_plantation
     }
     possible_prestige_goods = {
-        prestige_good_generic_tools
+        prestige_good_thunes_tools
     }
 
 
@@ -739,7 +826,7 @@ company_statsbaner = {
         building_motor_industry
     }
     possible_prestige_goods = {
-        prestige_good_schichau_engines
+        prestige_good_norsk_lokomotiv_motor
     }
 
 
@@ -820,7 +907,7 @@ company_järnvägar = {
         building_motor_industry
     }
     possible_prestige_goods = {
-        prestige_good_schichau_engines
+        prestige_good_sj_a
     }
 
 
@@ -1063,7 +1150,7 @@ company_ikea = {
 
 
     possible_prestige_goods = {
-        prestige_good_bentwood_furniture
+        prestige_good_billy_bookcase
     }
 
 
@@ -1225,7 +1312,7 @@ company_volvo = {
         building_automotive_industry
     }
     possible_prestige_goods = {
-        prestige_good_schichau_engines
+        prestige_good_volvo_automobiles
     }
     possible = {
         any_scope_state = {
