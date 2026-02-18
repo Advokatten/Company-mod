@@ -11,7 +11,6 @@
   company_kongsberg: "Kongsberg Gruppen" # Founded 1814
   company_bama: "Bama" # Founded 1886
   company_hadeland_glassverk: "Hadeland Glassverk" # Founded in 1762
-
   ############### Sweden ######################
   company_järnvägar: "Statens Järnvägar" # Founded 1856
   company_swedbank: "Swedbank" # Founded 1820
@@ -22,7 +21,6 @@
   company_wifstavarfs: "Wifstavarfs" #According to svt.se Wiftsavarfs was founded in 1798. I cant find the source they used but im gonna go on a limb and use it as a company.
   company_Bahco: "Bacho" # Founded 1886
   company_Saab: "Saab AB" # Founded in 1937 but too iconic as a weapons manufacturer to not have as a company in my oppinion.
-
   #####################Denmark##################
   company_Goldschmidt_&_nordholm: "Goldschmidt & Nordholm" # I could not find the exact date it was founded but Benny Goldschmidt inhereted the factory in 1842 according to wikipedia. This is so niche it seems dumb to be fake.
   company_danish_gold_coast: "Danish Africa company" # This company is completely made up by me for fun
@@ -31,9 +29,7 @@
   company_o_k: "Det Østasiatiske Kompagni" # Founded in 1897
   ###################Finland##################
   company_finlayson_oy: "Finlayson Oy" # Founded in 1820 by a scot in Finland of all places. It is cool so i will use it as a company.
-
   ##############Prestige goods#################
-
   prestige_good_carlsberg: "Carlsberg"
   prestige_good_krag_jørgensen: "Krag Jørgensen"
   prestige_good_potato_starch: "Potato Starch"
