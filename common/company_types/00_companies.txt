@@ -46,11 +46,9 @@ company_norges_bank = {
 
     }
     prosperity_modifier = {
-        investment_pool_contribution_mult = 0.05
-        government_wages_mult = -0.05
-        building_academics_shares_add = 1
-        building_company_government_dividends_add = 1
-        state_pop_qualifications_mult = 0.5
+        building_academics_shares_add = 20
+        building_company_government_dividends_add = 0.3
+        state_pop_qualifications_mult = 0.3
 
     }
     ai_will_do = {
@@ -121,7 +119,7 @@ company_hoff = {
 
     prosperity_modifier = {
         state_birth_rate_mult = 0.05
-        building_food_industry_throughput_add = 0.5
+        building_food_industry_throughput_add = 0.3
         country_tech_spread_mult = 0.1
         country_acceptance_no_shared_heritage_trait_add = 50
     }
@@ -191,7 +189,7 @@ company_bama = {
     }
 
     prosperity_modifier = {
-        building_group_bg_plantations_throughput_add = 0.5
+        building_group_bg_plantations_throughput_add = 0.3
         building_group_bg_plantations_self_investment_chance_add = 0.1
 
     }
@@ -279,7 +277,7 @@ company_porsgrunds = {
     }
     prosperity_modifier = {
         state_loyalists_from_political_movements_mult = 0.1
-        building_glassworks_throughput_add = 0.5
+        building_glassworks_throughput_add = 0.3
         country_prestige_mult = 0.1
     }
 
@@ -366,7 +364,7 @@ company_hadeland_glassverk = {
     }
     prosperity_modifier = {
         country_society_tech_research_speed_mult  = 0.1
-        building_glassworks_throughput_add = 0.5
+        building_glassworks_throughput_add = 0.3
 
     }
 
@@ -450,9 +448,9 @@ company_jernverk = {
     }
 
     prosperity_modifier = {
-        building_steel_mill_throughput_add = 0.5
+        building_steel_mill_throughput_add = 0.3
         country_production_tech_spread_mult = 0.1
-        building_construction_sector_throughput_add = 0.7
+        building_construction_sector_throughput_add = 0.3
 
     }
 
@@ -526,8 +524,8 @@ company_kongsberg = {
 
     }
     prosperity_modifier = {
-        unit_army_offense_mult = 0.7
-        unit_army_defense_mult = 0.7
+        unit_army_offense_mult = 0.25
+        unit_army_defense_mult = 0.25
     }
 
     ai_will_do = {
@@ -606,7 +604,7 @@ company_sulitjelma = {
 
     }
     prosperity_modifier = {
-        building_construction_sector_throughput_add = 0.5
+        building_construction_sector_throughput_add = 0.3
         state_loyalists_from_political_movements_mult = 0.05
     }
 
@@ -688,7 +686,7 @@ company_bergens_tidende = {
     prosperity_modifier = {
         state_loyalists_from_political_movements_mult = 0.05
         state_radicals_from_political_movements_mult = -0.1
-        interest_group_ig_intelligentsia_approval_add = 0.1
+        interest_group_ig_intelligentsia_approval_add = 1
     }
 
     ai_will_do = {
@@ -769,8 +767,8 @@ company_thunes = {
     prosperity_modifier = {
 
         building_group_bg_manufacturing_throughput_add = 0.5
-        state_infrastructure_from_population_add = 0.5
-        state_infrastructure_from_population_max_add = 50
+        state_infrastructure_from_population_add = 0.4
+        state_infrastructure_from_population_max_add = 30
     }
 
     ai_will_do = {
@@ -850,7 +848,7 @@ company_statsbaner = {
     prosperity_modifier = {
         state_infrastructure_from_population_add = 0.7
         state_infrastructure_from_population_max_add = 15
-        country_production_tech_spread_mult = 0.6
+        country_production_tech_spread_mult = 0.1
     }
 
     ai_will_do = {
@@ -1008,7 +1006,7 @@ company_swedbank = {
         state_clergymen_investment_pool_contribution_add = 0.05
         state_aristocrats_investment_pool_contribution_add = 0.05
         state_capitalists_investment_pool_contribution_add = 0.05
-        country_government_dividends_reinvestment_add = 0.5
+        country_government_dividends_reinvestment_add = 0.1
     }
     ai_will_do = {
         any_scope_state = {
@@ -1083,7 +1081,7 @@ company_strimberg = {
 
     }
     prosperity_modifier = {
-        state_loyalists_from_political_movements_mult = 0.5
+        state_loyalists_from_political_movements_mult = 0.3
         state_radicals_from_political_movements_mult = -0.1
     }
 
@@ -1170,7 +1168,7 @@ company_ikea = {
 
     }
     prosperity_modifier = {
-        building_furniture_manufactory_throughput_add = 0.5
+        building_furniture_manufactory_throughput_add = 0.3
         country_prestige_mult = 0.1
     }
 
@@ -1253,7 +1251,7 @@ company_ica = {
     }
 
     prosperity_modifier = {
-        building_food_industry_throughput_add = 0.5
+        building_food_industry_throughput_add = 0.3
         state_birth_rate_mult = 0.05
     }
 
@@ -1331,8 +1329,8 @@ company_volvo = {
     }
 
     prosperity_modifier = {
-        building_motor_industry_throughput_add = 0.5
-        building_automotive_industry_throughput_add = 0.5
+        building_motor_industry_throughput_add = 0.1
+        building_automotive_industry_throughput_add = 0.1
 
     }
 
@@ -1412,8 +1410,7 @@ company_wifstavarfs = {
     }
 
     prosperity_modifier = {
-
-        building_logging_camp_throughput_add = 0.5
+        building_group_bg_logging_throughput_add = 0.3
         country_military_tech_spread_mult = 0.1
 
     }
@@ -1574,8 +1571,8 @@ company_Saab = {
 
     }
     prosperity_modifier = {
-        unit_army_offense_mult = 0.25
-        unit_army_defense_mult = 0.25
+        unit_army_offense_mult = 0.15
+        unit_army_defense_mult = 0.15
 
     }
 
@@ -1663,8 +1660,8 @@ company_Goldschmidt_&_nordholm = {
 
     }
     prosperity_modifier = {
-        country_society_tech_spread_mult = 0.12
-        building_synthetics_plant_throughput_add = 0.5
+        country_society_tech_spread_mult = 0.10
+        building_synthetics_plant_throughput_add = 0.3
     }
 
 
@@ -1910,9 +1907,8 @@ company_hans_smith = {
 
 
     prosperity_modifier = {
-        building_tooling_workshop_throughput_add = 0.5
-        building_logging_camp_throughput_add = 0.5
-
+        building_tooling_workshop_throughput_add = 0.3
+        building_group_bg_logging_throughput_add = 0.3
     }
 
     ai_will_do = {
@@ -1990,8 +1986,8 @@ company_o_k = {
     }
 
     prosperity_modifier = {
-        building_group_bg_plantations_tax_mult = 1
-        building_group_bg_plantations_construction_efficiency_add = 1
+        building_group_bg_plantations_tax_mult = 0.1
+        building_group_bg_plantations_construction_efficiency_add = 0.3
     }
 
     ai_will_do = {

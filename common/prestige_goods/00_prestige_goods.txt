@@ -400,7 +400,7 @@ prestige_good_billy_bookcase = {
 prestige_good_sj_a = {
     base_good = engines
     prestige_bonus = 0.1
-    texture = "gfx/interface/icons/goods_icons/prestige_goods/Train_engine.dds"
+    texture = "gfx/interface/icons/goods_icons/prestige_goods/trainswe.dds"
 }
 
 prestige_good_volvo_automobiles = {
