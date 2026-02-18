@@ -1,7 +1,7 @@
 ﻿#####################################Norway################################################
 
 company_norges_bank = {
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/NorgesBank.png"
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/Norges.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
 
 
@@ -48,7 +48,10 @@ company_norges_bank = {
     prosperity_modifier = {
         investment_pool_contribution_mult = 0.05
         government_wages_mult = -0.05
-        building_academics_shares_add = 0.5
+        building_academics_shares_add = 1
+        building_company_government_dividends_add = 1
+        state_pop_qualifications_mult = 0.5
+
     }
     ai_will_do = {
         any_scope_state = {
@@ -313,7 +316,7 @@ company_porsgrunds = {
 ############################################################
 
 company_hadeland_glassverk = {
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/hadeland.png"
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/hs.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
 
@@ -958,7 +961,7 @@ company_järnvägar = {
 
 
 company_swedbank = {
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/Swedbank.png"
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/swebank.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_publishing.dds"
 
 
@@ -1030,7 +1033,7 @@ company_swedbank = {
 
 
 company_strimberg = {
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/textile.png" #I could not find a company or textile mill that had a icon i could use so i found a generic png
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/textilemill.png" #I could not find a company or textile mill that had a icon i could use so i found a generic png
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
 
@@ -1857,7 +1860,7 @@ company_carlsberg = {
 
 
 company_hans_smith = {
-    icon = "gfx/interface/icons/company_icons/historical_company_icons/bahco.png"
+    icon = "gfx/interface/icons/company_icons/historical_company_icons/Blacksmith.png"
     background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
 
