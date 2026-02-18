@@ -2068,8 +2068,8 @@ company_finlayson_oy = {
 
     }
     prosperity_modifier = {
-        building_textile_mill_throughput_add = 0.5
-        building_cotton_plantation_throughput_add = 0.5
+        building_textile_mill_throughput_add = 0.3
+        building_cotton_plantation_throughput_add = 0.3
     }
 
 
